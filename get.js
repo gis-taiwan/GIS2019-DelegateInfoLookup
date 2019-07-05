@@ -58,9 +58,18 @@ $('document').ready(function(){
     $.getJSON( "delegate.json", function( data ) {
         //console.log(data);
         //console.log();
-        $('#id').text(data[0][id]);
-        $('#keynote1').text(data[1][id]);
-        $('#keynote2').text(data[2][id]);
+        $('#code').text(data[0][id]);
+        $('#fp').text(data[1][id]);
+        $('#ap_t').text(data[2][id]);
+        $('#ap_c').text(data[3][id]);
+        $('#keynote1').text(data[4][id]);
+        $('#keynote2').text(data[5][id]);
+        $('#workshop1').text(data[6][id]);
+        $('#workshop2').text(data[7][id]);
+        $('#cv').text(data[8][id]);
+        $('#ld1').text(data[9][id]);
+        $('#ld2').text(data[10][id]);
+        $('#cv').text(data[11][id]);
     });
 
 
