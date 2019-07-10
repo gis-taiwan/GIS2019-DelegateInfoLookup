@@ -67,8 +67,8 @@ $('document').ready(function(){
         $('#workshop1').text(data[5][id]);
         $('#workshop2').text(data[6][id]);
         $('#cv').text(data[7][id]);
-        $('#ld1').text(data[8][id]);
-        $('#ld2').text(data[9][id]);
+        $('#ld1').html(data[8][id]);
+        $('#ld2').html(data[9][id]);
 		info = (data[10][id]).split('\n');
 		console.log(info)
         $('#ce1').text(info[0]);
