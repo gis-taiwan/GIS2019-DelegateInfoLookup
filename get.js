@@ -58,18 +58,22 @@ $('document').ready(function(){
     $.getJSON( "delegate.json", function( data ) {
         //console.log(data);
         //console.log();
-        $('#code').text(data[0][id]);
-        $('#fp').text(data[1][id]);
-        $('#ap_t').text(data[2][id]);
-        $('#ap_c').text(data[3][id]);
-        $('#keynote1').text(data[4][id]);
-        $('#keynote2').text(data[5][id]);
-        $('#workshop1').text(data[6][id]);
-        $('#workshop2').text(data[7][id]);
-        $('#cv').text(data[8][id]);
-        $('#ld1').text(data[9][id]);
-        $('#ld2').text(data[10][id]);
-        $('#cv').text(data[11][id]);
+        $('#code').text(id);
+        $('#fp').text(data[0][id]);
+        $('#ap_t').text(data[1][id]);
+        $('#ap_c').text(data[2][id]);
+        $('#keynote1').text(data[3][id]);
+        $('#keynote2').text(data[4][id]);
+        $('#workshop1').text(data[5][id]);
+        $('#workshop2').text(data[6][id]);
+        $('#cv').text(data[7][id]);
+        $('#ld1').text(data[8][id]);
+        $('#ld2').text(data[9][id]);
+		info = (data[10][id]).split('\n');
+		console.log(info)
+        $('#ce1').text(info[0]);
+        $('#ce2').text(info[1]);
+        $('#ce3').text(info[2]);
     });
 
 
